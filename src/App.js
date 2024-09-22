@@ -12,7 +12,7 @@ function App() {
     e.preventDefault();
     try {
       const jsonInput = JSON.parse(input);
-      const res = await axios.post('https://localhost:5000/bfhl', jsonInput);
+      const res = await axios.post('https://backendbajaj-production-5164.up.railway.app/bfhl', jsonInput);
       setResponse(res.data);
       setError(null);
     } catch (err) {
